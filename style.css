@@ -643,6 +643,35 @@ a {
     border: white solid 3px;
     color: white;
 }
+.ani-img{
+    width: 60%;
+    position: absolute;
+    right: 10px;
+}
+.resume-btn{
+    position: absolute;
+    right: 10%;
+    top: 45%;
+    padding: 20px;
+    background-color: transparent;
+    border: #FF6F00 dashed 5px;
+    border-radius: 13px;
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family:serif;
+    transition: all 300ms;
+}
+.resume-btn:hover{
+    scale: 1.1;
+    background-color: white;
+    color: #FF6F00;
+    border: solid 5px;
+}
+.resume-btn:active {
+    transform: scale(0.9);
+    transition: transform 0.3s;
+}
 
 @media only screen and (max-width: 600px) {
     .top-btn {
@@ -655,6 +684,12 @@ a {
     form{
         min-width: 200px;
     }
+    .ani-img{
+        width: 80%;
+        right: -100px;
+        bottom: -7%;
+        object-fit: contain;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -664,5 +699,11 @@ a {
         font-size: medium;
         bottom: 50px;
         right: 50px;
+    }
+    .ani-img{
+        width: 80%;
+        right: -100px;
+        bottom: -7%;
+        object-fit: contain;
     }
 }
